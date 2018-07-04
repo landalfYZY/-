@@ -1,14 +1,52 @@
 body{
     background: #f3f3f3
 }
-.header{
-    height: 100px;
-    background: #fff;
-}
-.max-width{
-    margin: auto;
-    max-width: 1120px;
-}
+
+@media screen and (min-width: 1120px) { 
+    .max-width{
+        margin: auto;
+        max-width: 1120px;
+    }
+    .tgl{
+        width: 100%;
+        padding: 20px;
+        background: #fff
+    }
+    .tgl2{
+        display: none
+    }
+    .header{
+        height: 100px;
+        background: #fff;
+        width: 100%;
+    }
+    .header2{
+        display: none
+    }
+} 
+@media screen and (max-width: 1119px) {
+    .max-width{
+        margin: auto;
+        max-width: 100%;
+    }
+    .tgl2{
+        width: 100%;
+        padding: 15px;
+        background: #fff
+    }
+    .tgl{
+        display: none
+    }
+    .header2{
+        height: 50px;
+        background: #fff;
+        width: 100%;
+        padding: 15px
+    }
+    .header{
+        display: none
+    }
+} 
 .panel-between{
     display: flex;
     justify-content: space-between
@@ -41,11 +79,7 @@ body{
     color: #0099ff
 }
 
-.tgl{
-    width: 100%;
-    padding: 20px;
-    background: #fff
-}
+
 .tgl .title{
     font-size: 18px;
     color: #000

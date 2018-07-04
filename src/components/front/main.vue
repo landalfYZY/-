@@ -19,6 +19,16 @@
                     </div>
                 </div>
             </header>
+            <header class="header2">
+                <div class="panel-between item-center">
+                    <div class="panel-start item-center">
+                        <Button type="ghost" icon="navicon" size="small"></Button>
+                        <img src="../../assets/img/logo.png" width="20px" style="margin-left:15px" alt="">
+                    </div>
+                    
+                    <div>登录/注册</div>
+                </div>
+            </header>
             <div class="main" style="width:100%">
                 <div class="max-width">
                     <router-view/>

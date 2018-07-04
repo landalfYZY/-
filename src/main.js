@@ -5,10 +5,10 @@ import App from './App'
 import router from './router'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-
-
-
-Vue.config.productionTip = false
+import com from './assets/js/common'
+import $ from 'jquery'
+Vue.prototype.com = com;
+Vue.config.productionTip = false;
 Vue.use(iView);
 
 /* eslint-disable no-new */
