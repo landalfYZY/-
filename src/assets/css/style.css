@@ -1,0 +1,68 @@
+body{
+    background: #f3f3f3
+}
+.header{
+    height: 100px;
+    background: #fff;
+}
+.max-width{
+    margin: auto;
+    max-width: 1120px;
+}
+.panel-between{
+    display: flex;
+    justify-content: space-between
+}
+.item-center{
+    align-items: center
+}
+.panel-start{
+    display: flex;
+    justify-content: flex-start
+}
+.logo-text{
+    margin-left: 15px;
+    font-size: 20px
+}
+.hrf{
+    font-size: 20px;
+    margin-left:30px;
+    color: #000;
+}
+.font-16{
+    font-size: 16px
+}
+.hrfact{
+    font-size: 20px;
+    margin-left:30px;
+    color: #888;
+}
+.hrf:hover{
+    color: #0099ff
+}
+
+.tgl{
+    width: 100%;
+    padding: 20px;
+    background: #fff
+}
+.tgl .title{
+    font-size: 18px;
+    color: #000
+}
+.tgl .title:hover{
+    color: #0099ff
+}
+.grey{
+    color: #888;
+    font-size: 14px
+}
+.panel-end{
+    display: flex;
+    justify-content: flex-end
+}
+.pri{
+    color: #FF3300;
+    font-weight: bold;
+    font-size: 20px
+}
