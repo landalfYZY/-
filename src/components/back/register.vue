@@ -10,7 +10,7 @@
                     <Input type="password" v-model="formValidate.password" placeholder="密码"></Input>
                 </FormItem>
                 <FormItem label="确认密码" prop="rpassword">
-                    <Input type="rpassword" v-model="formValidate.rpassword" placeholder="确认密码"></Input>
+                    <Input type="password" v-model="formValidate.rpassword" placeholder="确认密码"></Input>
                 </FormItem>
                 <FormItem label="地址" prop="address" >
                     <Input v-model="formValidate.address" placeholder="地址"></Input>
@@ -55,7 +55,8 @@ export default {
       this.loading = true;
       this.$refs[name].validate(valid => {
         if (valid) {
-          that.com.http("post", "stCompany", this.formValidate, function(res) {
+          delete that.formValidate.rpassword
+          that.com.http("POST", "stCompany", JSON.stringify(that.formValidate), function(res) {
             that.loading = false
           });
         } else {

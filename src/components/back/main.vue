@@ -57,10 +57,9 @@
                                 <Submenu name="2">
                                     <template slot="title">
                                         <Icon type="ios-keypad"></Icon>
-                                        Item 2
+                                        公司管理
                                     </template>
-                                    <MenuItem name="2-1">Option 1</MenuItem>
-                                    <MenuItem name="2-2">Option 2</MenuItem>
+                                    <MenuItem name="/company">公司列表</MenuItem>
                                 </Submenu>
                                 <Submenu name="3">
                                     <template slot="title">
